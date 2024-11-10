@@ -1,11 +1,20 @@
-def multipy_numbers(num1, num2):
-    result= num1*num2
-    return result 
-product= multipy_numbers(4,6)
-print("Product is",product)
+def add(num1,num2):
+    return num1 + num2
 
-def addtion_numbers(num1, num2):
-    result= num1+num2
-    return result 
-addtion= addtion_numbers(9,6)
-print("The Addtion is",addtion)
+def sub(num1,num2):
+    return num1 - num2
+
+def multiply(num1,num2):
+    return num1 * num2
+
+def div(num1,num2):
+    if num2 !=0:
+        return num1/num2
+    else:
+        return "Cannot divide by 0"
+num1 = 10
+num2 = 5
+print("Addition: ",add(num1,num2))
+print("Subtraction: ",sub(num1,num2))
+print("Multiplication: ",multiply(num1,num2))
+print("Division: ",div(num1,num2))
